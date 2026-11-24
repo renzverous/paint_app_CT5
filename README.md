@@ -1,4 +1,7 @@
 # paint_app_CT5
+JOHN RENZVER GENOVA
+
+BS INFOTECH SE-3A
 
 A desktop Paint Application built with Python, Tkinter, and Pillow
 
@@ -50,4 +53,25 @@ When the mouse is released, finish_drawing() draws the triangle on the Pillow im
 
 <img width="440" height="106" alt="Screenshot 2026-11-24 160012" src="https://github.com/user-attachments/assets/f6338a7e-4dfb-4b86-afa2-17a361fa4438" />
 <img width="502" height="74" alt="Screenshot 2026-11-24 155943" src="https://github.com/user-attachments/assets/ba5757b4-1693-4b26-a370-dd8834638b91" />
+
+5. CONFIRM BEFORE CLEARING
+
+In the original code, ma'am, clicking Clear erased everything right away, so the user could lose all their work by accident.
+So I added a confirmation dialog using messagebox.askyesno(). It asks "Are you sure you want to clear the canvas?" with Yes and No buttons. If the user clicks No, the function stops and nothing is erased. If the user clicks Yes, the canvas is cleared.
+   <img width="630" height="228" alt="Screenshot 2026-11-24 161750" src="https://github.com/user-attachments/assets/e6521b59-9dca-4877-a290-a2174176f127" />
+
+   <img width="547" height="290" alt="Screenshot 2026-11-24 161616" src="https://github.com/user-attachments/assets/23cf3dcd-40e1-43f4-ae01-9507129801d0" />
+
+
+ 6. QUICK COLORS
+For the quick colors, ma'am, I added six one-click color buttons: black, red, blue, green, yellow, and purple. I stored them in a list called QUICK_COLORS with each color's name and hex code.
+Then I used a for loop to make one button for each color instead of writing six buttons by hand. I had to write lambda c=code: set_color(c), because without c=code, all six buttons would use the last color in the loop, which is purple.
+When a color button is clicked, the set_color() function changes the drawing color right away and changes the Choose Color button to show the current color.
+<img width="645" height="98" alt="Screenshot 2026-11-24 162251" src="https://github.com/user-attachments/assets/c5ecf8d5-786a-4b04-bb76-515e10384915" /><img width="759" height="63" alt="Screenshot 2026-11-24 162311" src="https://github.com/user-attachments/assets/2e365bd3-56b2-4107-9951-f4d710521902" />
+
+<img width="449" height="69" alt="Screenshot 2026-11-24 162332" src="https://github.com/user-attachments/assets/4e76bfb4-e4af-463f-8aa1-3330594972bc" />
+
+
+
+      
 
